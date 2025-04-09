@@ -1,0 +1,94 @@
+body.dark {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 80px;
+  background: #2c2c3d;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.tab, .add-tab {
+  background: #3c3c5d;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tab:hover, .add-tab:hover {
+  background: #505070;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.output {
+  flex: 1;
+  background: #2a2a40;
+  border-radius: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #3a3a5a;
+  color: white;
+}
+
+.footer button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background: #357ab8;
+}
+
+.stats {
+  width: 150px;
+  background: #2c2c3d;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+}

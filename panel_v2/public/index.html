@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Node Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js" defer></script>
+</head>
+<body class="dark">
+  <div class="container">
+    <div class="sidebar">
+      <div class="tab">Log</div>
+      <div class="tab">Code</div>
+      <div class="tab">Terminal</div>
+      <button class="add-tab">＋</button>
+    </div>
+
+    <div class="main">
+      <div class="output" id="output">Log / Code / Terminal output...</div>
+
+      <div class="footer">
+        <input type="text" id="commandInput" placeholder="Script khởi động..." />
+        <button id="startBtn">▶ Start</button>
+        <button id="stopBtn">✖ Stop</button>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div>Uptime</div>
+      <div>CPU | CPU</div>
+      <div>RAM | RAM</div>
+      <div>Disk | Disk</div>
+    </div>
+  </div>
+</body>
+</html>
