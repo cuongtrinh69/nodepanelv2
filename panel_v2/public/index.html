@@ -9,16 +9,24 @@
 </head>
 <body class="dark">
   <div class="container">
+    <!-- Sidebar -->
     <div class="sidebar">
-      <div class="tab">Log</div>
-      <div class="tab">Code</div>
-      <div class="tab">Terminal</div>
+      <div class="tab" id="logTabBtn">Log</div>
+      <div class="tab" id="codeTabBtn">Code</div>
+      <div class="tab" id="terminalTabBtn">Terminal</div>
       <button class="add-tab">＋</button>
     </div>
 
+    <!-- Main -->
     <div class="main">
-      <div class="output" id="output">Log / Code / Terminal output...</div>
+      <!-- Nội dung Tab -->
+      <div class="output">
+        <div id="logTab">Log output...</div>
+        <div id="codeTab" style="display: none;">Danh sách file/code ở đây...</div>
+        <div id="terminalTab" style="display: none;">Terminal output...</div>
+      </div>
 
+      <!-- Footer (Start/Stop) -->
       <div class="footer">
         <input type="text" id="commandInput" placeholder="Script khởi động..." />
         <button id="startBtn">▶ Start</button>
@@ -26,12 +34,24 @@
       </div>
     </div>
 
+    <!-- VPS Stats -->
     <div class="stats">
-      <div>Uptime</div>
-      <div>CPU | CPU</div>
-      <div>RAM | RAM</div>
-      <div>Disk | Disk</div>
+      <table>
+        <tr>
+          <td>Uptime</td><td id="uptime">...</td>
+        </tr>
+        <tr>
+          <td>CPU</td><td id="cpu">...</td>
+        </tr>
+        <tr>
+          <td>RAM</td><td id="ram">...</td>
+        </tr>
+        <tr>
+          <td>Disk</td><td id="disk">...</td>
+        </tr>
+      </table>
     </div>
   </div>
 </body>
 </html>
+
